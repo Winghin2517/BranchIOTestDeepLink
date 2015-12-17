@@ -16,6 +16,7 @@
         <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_XXX" />
         <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_XXX" />
 
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -41,7 +42,8 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
 
-            <meta-data android:name="pic_url" android:value="value" />
+            <meta-data android:name="picurl" android:value="picurl" />
+            <meta-data android:name="io.branch.sdk.auto_link_path" android:value="/item/12345" />
 
         </activity>
     </application>
