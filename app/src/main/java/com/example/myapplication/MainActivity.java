@@ -144,4 +144,14 @@ public class MainActivity extends AppCompatActivity {
     public void onNewIntent(Intent intent) {
         this.setIntent(intent);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //Checking if the previous activity is launched on Branch Auto deep link.
+        if(requestCode == getResources().getInteger(R.integer.AutoDeeplinkRequestCode)){
+            //Decide here where  to navigate  when an auto deep linked activity finishes.For e.g. go to HomeActivity or a  SignUp Activity.
+            finish();
+        }
+    }
 }
